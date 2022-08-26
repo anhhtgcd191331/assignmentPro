@@ -28,7 +28,7 @@ namespace assignrmt
             {
                 if (book.getIdBook().Equals(id))
                 {
-                    Console.WriteLine("Name of Book: ");
+                    Console.Write("Name of Book: ");
                     string nameBook = Console.ReadLine();
                     Console.Write("Author of Book: ");
                     string authorBook = Console.ReadLine();
@@ -85,7 +85,7 @@ namespace assignrmt
         }
         public void addBorrowBook(BorrowBook borrow)
         {
-            borrowBooks.Add(borrow);
+            borrowBooks.Add(borrow);    
         }
         public string checkIdBook()
         {
@@ -97,6 +97,7 @@ namespace assignrmt
                 {
                     if (book.getIdBook().Equals(idBook) && book.getQuatity()!=0)
                     {
+                        book.setQuantity(book.getQuatity() - 1);
                         return idBook;
                     }
                     else
@@ -107,7 +108,6 @@ namespace assignrmt
                 }
             }
         }
-        public 
 
     }
 }

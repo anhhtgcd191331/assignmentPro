@@ -32,6 +32,7 @@ namespace assignrmt
                 Console.WriteLine("5. Find book in library");
                 Console.WriteLine("6. Borrow book");
                 Console.WriteLine("7. Display information borro book");
+                Console.WriteLine("0. Exit");
                 Console.Write("Enter choice here: ");
                 choice = int.Parse(Console.ReadLine());
                 switch (choice)
