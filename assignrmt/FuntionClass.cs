@@ -53,10 +53,7 @@ namespace assignrmt
                 if (book.getIdBook().Equals(id))
                 {
                     books.Remove(book);
-                }
-                else
-                {
-                    Console.WriteLine("Not found");
+                    break;
                 }
             }
         }
@@ -68,10 +65,6 @@ namespace assignrmt
                 if (book.getIdBook().Equals(info)|| book.getNameBook().Equals(info)||book.getpublicationYear().Equals(info)||book.getCategoryBook().Equals(info))
                 {
                     Console.Write(book.ToString());
-                }
-                else
-                {
-                    Console.WriteLine("Not found");
                 }
             }
         }
